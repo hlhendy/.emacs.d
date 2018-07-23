@@ -47,6 +47,8 @@
 (add-hook 'before-save-hook 'gofmt-before-save)
 (add-hook `go-mode-hook `flycheck-mode)
 
+(require 'matlab)
+(add-hook 'text-mode-hook 'matlab-hook)
 
 (load-theme 'afternoon t)
 
